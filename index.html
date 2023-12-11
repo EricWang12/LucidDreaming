@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="LucidDreaming: Controllable Object-Centric 3D Generation.">
+  <meta name="keywords" content="Trustworthy Machine Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LucidDreaming: Controllable Object-Centric 3D Generation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">LucidDreaming: Controllable Object-Centric 3D Generation</h1>
+          <!-- <h3 class="title is-4 publication-title">CVPR 2023</h3> -->
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="https://www.zhaoningwang.com">Zhaoning Wang</a>,</span>
+            <span class="author-block">
+              <a href="https://liming-ai.github.io/">Ming Li</a>,
+            </span>
+            </span>
+            <span class="author-block">
+              <a href="https://www.crcv.ucf.edu/chenchen/">Chen Chen</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Center for Research in Computer Vision<br/>University of Central Florida</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://zero-shot-model-diagnosis.github.io/ZOOM.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.00588"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="."
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming soon)</span>
+                  </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop" style="text-align:center">
+    <h2 class="title is-4">Can we achieve <b>controllability</b> for 3D generation?</h2>
+    <img src="./static/images/teaser.png" style="width:90%;">
+      <h2 class="subtitle has-text-centered">
+        We provide fine-grained controls over existing 3D generation pipelines in an plug-and-play manner.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            With the recent development of generative models, Text-to-3D generations have also seen significant growth. Nonetheless, achieving precise control over 3D generation continues to be an arduous task, as using text to control often leads to missing objects and imprecise locations. Contemporary strategies for enhancing controllability in 3D generation often entail the introduction of additional parameters, such as customized diffusion models. This often induces hardness in adapting to different diffusion models or creating distinct objects.
+          </p>
+          <p>
+            In this paper, we present LucidDreaming as an effective pipeline capable of fine-grained control over 3D generation. It requires only minimal input of 3D bounding boxes, which can be deduced from a simple text prompt using a Large Language Model. Specifically, we propose clipped ray sampling to separately render and optimize objects with user specifications. We also introduce objectcentric density blob bias, fostering the separation of generated objects. With individual rendering and optimizing of objects, our method excels not only in controlled content generation from scratch but also within the pretrained NeRF scenes. In such scenarios, existing generative approaches often disrupt the integrity of the original scene, and current editing methods struggle to synthesize new content in empty spaces. We show that our method exhibits remarkable adaptability across a spectrum of mainstream Score Distillation Sampling-based 3D generation frameworks, and achieves superior alignment of 3D content when compared to baseline approaches. We also provide a dataset of prompts with 3D bounding boxes, benchmarking 3D spatial controllability.
+          </p>
+        </div>
+
+        <br/>
+
+        <h2 class="title is-3">Framework</h2>
+        <div class="columns is-vcentered interpolation-panel">
+          <img src="./static/images/pipeline.png" style="width:100%;">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            A high-level overview of <b>LucidDreaming</b> pipeline, controlling prompts are decomposed into 3D bounding boxes with LLMs, such as GPT4. Then in LucidDreaming, object-centric density bias and clipped ray sampling are used with Score Distillation Sampling (SDS) loss to align the generation with the user's control.
+          </p>
+        </div>
+        <br/>
+        <!--/ Interpolating. -->
+        <h2 class="title is-3">Gallery</h2>
+        <video style="width: 90%; height: auto; display: block; margin: auto;" autoplay muted loop>
+          <source src="./static/images/video_grid.mp4" type="video/mp4">
+          Your browser does not support the video tag. <br>
+      </video>
+      <br>
+      
+      More is coming to website soon!
+      <br>
+      <br>
+        <h3 class="title is-3">LucidDreaming Method</h3>
+        <div class="content has-text-justified">
+          <p>
+            We introduce <b>clipped ray sampling</b> to ensure the individual rendering within the controlling boxes, and <b>object-centric density bias initialization</b> to place the objects strictly centered within their boxes.
+          </p>
+        </div>
+
+        <div style="text-align:center">
+          <h4 class="title is-4">Clipped Ray Sampling</h4>
+          <img class="summary-img" src="./static/images/clipped_ray_sampling.png" style="width:60%;"> <br>
+          <br>
+        </div>
+
+        <p>
+          Clipped Ray Sampling. Given bounding boxes and description, sample points within the boxes are clipped between entry and exit of the corresponding object, and rendered individually for SDS loss. Points outside are used for scene preservation with reconstruction loss against a frozen copy of initialized NeRF (in this case, the Lego bulldozer).
+        </p><br>
+
+
+        <div style="text-align:center">
+          <h4 class="title is-4">Object-Centric Density Bias Initialization</h4>
+          <img class="summary-img" src="./static/images/ocdb.png" style="width:70%;"> <br>
+          <br>
+        </div>
+
+        <p>
+          We show two toy examples in illustration of the occupancy grids with clipped ray sampling. With default uni-sphere density bias (a), the objects are either clustered to the center (top), or totally missing due to gradient vanishing (bottom), while our object-centric bias (b) aligns the object's initial density with the given bounding boxes.
+        </p><br>
+
+        <h3 class="title is-3">Visualization Results</h3>
+        <div style="text-align:center">
+          <h4 class="title is-4">Controllable 3D Generation</h4>
+          <img class="summary-img" src="./static/images/res_0.png" style="width:100%;"> <br>
+          <br>
+        </div>
+
+        <p>
+          Examples of controlled 3D generation. The bounding boxes and prompts are decomposed from the scene prompt with an LLM. We show our method is adaptable to multiple SDS-based 3D generation methods to generate Bounding Box-controlled 3D content. In the last row, we show the best of three baseline methods (in terms of GPT4-V rating) with the scene prompt. Clustered objects, missing items, and wrong spatial are the most common issues in the baseline methods.
+        </p><br>
+
+        <div style="text-align:center">
+          <h4 class="title is-4">Object Placement to Scene</h4>
+          <img class="summary-img" src="./static/images/res_1.png" style="width:80%;"> <br>
+          <br>
+        </div>
+
+        <p>
+          Unlike existing methods focused on global scene editing (e.g., Vox-E), our approach enables the controllable generation of high-quality 3D content while preserving the original scene.
+        </p><br>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- 
+        <div class="content has-text-justified">
+          <p>
+            This demo shows how a classifier score changes with semantic modifications of the image. We refer the images as counterfactual images, as the images are generated to flip the target model, in this case, a classifier.
+          </p>
+        </div>
+        <table>
+          <tr>
+            <td><img src="./static/images/gif/animation.gif"></td>
+          </tr>
+        </table>
+
+        <div class="content has-text-justified">
+          <p>
+            The first four images are on Dog/Cat classifier, and the following two are on perceived age (Young) classifier. Lastly, the final two are on the perceived gender classifier.
+          </p>
+        </div>
+
+        <br/>
+
+        <h3 class="title is-4">Single-attribute search</h3>
+        <div class="content has-text-justified">
+          <p>
+            Model diagnosis histograms generated by the counterfactual's effectiveness on the target model for a particular attribute. The vertical axis values reflect the attribute sensitivities calculated by averaging the model probability change over all sampled images. The horizontal axis is the attribute space input by user.
+          </p>
+        </div>
+        <div style="text-align:center">
+          <img class="summary-img" src="./static/images/histogram_with_image.png" style="width:100%;"> <br>
+        </div>
+
+        <br/>
+
+        <h3 class="title is-4">Multi-attribute search</h3>
+        <div class="content has-text-justified">
+          <p>
+            This demo shows the generation of counterfactual images over multiple simultaneous attributes.
+            In the images with a box on the right-up corner, the number indicates the probability of the classifier. 
+          </p>
+        </div>
+
+        <div style="text-align:center">
+          <h4 class="title is-6">Human Computer Vision models:</h4>
+          <img class="summary-img" src="./static/images/multi_attr_human.png" style="width:100%;"> <br>
+          <br>
+        </div>
+
+        <p>
+          We also show additional counterfactuals examples on other computer vision models, including semantic segmentation, multi-class classification, and binary church classifier (BCC).
+        </p>
+        <div style="text-align:center">
+          <h5 class="title is-6">Other Computer Vision models:</h5>
+          <img class="summary-img" src="./static/images/multi_attr_additional.png" style="width:72%;"> <br>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section> -->
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">BibTeX</h2>
+    <pre><code>@article{wang2023luciddreaming,
+  title={LucidDreaming: Controllable Object-Centric 3D Generation},
+  author={Wang, Zhaoning and Li, Ming and Chen, Chen},
+  journal={arXiv preprint arXiv:2312.00588},
+  year={2023}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Acknowledgements</h2>
+        <div class="content has-text-justified">
+          <p>We would like to thank George Cazenavette, Tianyuan Zhang, Yinong Wang, Hanzhe Hu, Bharath Raj for their invaluable feedbacks and suggestions in paper presentation and experimental design. 
+            We sincerely express our gratitude to Ken Ziyu Liu, Jiashun Wang, Bowen Li, and Ce Zheng for their revise and support that improve this work.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content has-text-justified">
+        <p>
+          We thank <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for opensouring the template of this website. 
+          The website theme colors are derived from [<a href="https://arxiv.org/pdf/2111.06377.pdf">1</a>, <a href="https://branding.web-resources.upenn.edu/logos-and-branding/elements-penn-logo">2</a>].
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="https://clustrmaps.com/site/1btnr"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=W7qxge2Snq-QqfwiBAVe4ve5n7nnPGW2h2BgMuI1Bsk&cl=ffffff" hidden/></a>
+</body>
+</html>
