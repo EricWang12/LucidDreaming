@@ -99,10 +99,11 @@
       <h2 class="subtitle has-text-centered">
         We provide fine-grained controls over existing 3D generation pipelines in an plug-and-play manner. It works in both pre-existing scenes and from scratch.
       </h2>
-      <video style="width: 90%; height: auto; display: block; margin: auto;" autoplay muted loop>
+      
+      <!-- <video style="width: 90%; height: auto; display: block; margin: auto;" autoplay muted loop>
         <source src="./static/images/progressive.mp4" type="video/mp4">
         Your browser does not support the video tag. <br>
-    </video>
+    </video> -->
     </div>
   </div>
 </section>
@@ -114,27 +115,41 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
 
-
-        <h2 class="title is-3">Gallery</h2>
-        <h3 class="title is-4">Text-to-3D demos</h2>
-        <video style="width: 90%; height: auto; display: block; margin: auto;" autoplay muted loop>
+        <h2 class="title is-3">Framework</h2>
+        <div class="columns is-vcentered interpolation-panel">
+          <img src="./static/images/pipeline.png" style="width:100%;">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            A high-level overview of <b>LucidDreaming</b> pipeline, controlling prompts are decomposed into 3D bounding boxes with LLMs, such as GPT4. Then in LucidDreaming, object-centric density bias and clipped ray sampling are used with Score Distillation Sampling (SDS) loss to align the generation with the user's control.
+          </p>
+        </div>
+        <br/>
+        <h2 class="title is-3">Demos</h2>
+        <h3 class="title is-4">Text-to-3D</h2>
+          Given a text prompts, we utilize a Language Model to convert it into bounding boxes and individual prompts. Then we can use them to generate 3D content align with the user's specifications. <br>
+        <video style="width: 120%; height: auto; display: block; margin: auto;" autoplay muted loop>
           <source src="./static/images/video_grid.mp4" type="video/mp4">
           Your browser does not support the video tag. <br>
       </video>
       <br>
+      <h2 class="title is-3">Other applications of our framework</h2>
       <h3 class="title is-4">Image-to-3D demos</h2>
+        Our framework can also adapt to Image-to-3D generation, given bounding boxes and image conditioning. <br>
       <video style="width: 90%; height: auto; display: block; margin: auto;" autoplay muted loop>
         <source src="./static/images/zero_video_grid.mp4" type="video/mp4">
         Your browser does not support the video tag. <br>
     </video>
     <br>
     <h3 class="title is-4">Object placement demos</h2>
+      With ability to use bounding box to control 3D generation, we can also use it to place objects into existing scenes. <br>
+      We show examples of placing objects into NeRF scenes trained on synthetic dataset. <br>
     <video style="width: 90%; height: auto; display: block; margin: auto;" autoplay muted loop>
       <source src="./static/images/edit_video_grid.mp4" type="video/mp4">
       Your browser does not support the video tag. <br>
   </video>
   <br>
-      More is coming to website soon!
+      <!-- More is coming to website soon! -->
       <br>
 
         <h2 class="title is-3">Abstract</h2>
@@ -149,16 +164,7 @@
 
         <br/>
 
-        <h2 class="title is-3">Framework</h2>
-        <div class="columns is-vcentered interpolation-panel">
-          <img src="./static/images/pipeline.png" style="width:100%;">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            A high-level overview of <b>LucidDreaming</b> pipeline, controlling prompts are decomposed into 3D bounding boxes with LLMs, such as GPT4. Then in LucidDreaming, object-centric density bias and clipped ray sampling are used with Score Distillation Sampling (SDS) loss to align the generation with the user's control.
-          </p>
-        </div>
-        <br/>
+
         <!--/ Interpolating. -->
 
       <br>
@@ -248,6 +254,6 @@
   </div>
 </footer>
 <!-- <a href="https://clustrmaps.com/site/1btnr"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=W7qxge2Snq-QqfwiBAVe4ve5n7nnPGW2h2BgMuI1Bsk&cl=ffffff" hidden/></a> -->
-<a href="https://clustrmaps.com/site/1bxr7" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=rnPMrZp-ImME1PL-lUjhKTM_i3rpGxFQxEzt3EfQ2R4&cl=ffffff" hidden/></a>
+<!-- <a href="https://clustrmaps.com/site/1bxr7" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=rnPMrZp-ImME1PL-lUjhKTM_i3rpGxFQxEzt3EfQ2R4&cl=ffffff" hidden/></a> -->
 </body>
 </html>
