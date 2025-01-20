@@ -1,2 +1,0 @@
- [('a sitting cat with a blue collar', [156, 0, 0, 200, 256, 256]),
- ('a sitting cat with a red collar', [156, 256, 0, 200, 256, 256])]

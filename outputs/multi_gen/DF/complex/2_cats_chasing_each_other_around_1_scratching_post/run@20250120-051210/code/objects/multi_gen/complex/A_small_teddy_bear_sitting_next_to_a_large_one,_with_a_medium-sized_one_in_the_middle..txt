@@ -1,3 +1,0 @@
-[('a small teddy bear', [0, 0, 0, 256, 256, 256]),
- ('a large teddy bear', [0, 256, 0, 256, 256, 512]),
- ('a medium-sized teddy bear', [256, 128, 0, 256, 256, 384])]

@@ -1,3 +1,0 @@
- [('a large watermelon', [106, 206, 0, 300, 300, 150]),
- ('a small pineapple', [106, 106, 0, 150, 150, 250]),
- ('a bunch of bananas', [256, 206, 0, 150, 100, 200])]

@@ -1,1 +1,0 @@
-CUDA_VISIBLE_DEVICES=3 python launch.py --config configs/zero123.yaml --train --gpu 0 data.image_path=./load/images/dog1.png

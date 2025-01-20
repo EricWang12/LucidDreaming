@@ -1,1 +1,0 @@
-bash scripts/multi_gen/test.sh 1 DF objects/multi_gen/hard/A_green_car_parking_on_the_left_of_a_blue_truck,_with_a_red_air_balloon_in_the_sky.txt outputs/multi_gen/DF/hard/A_green_car_parking_on_the_left_of_a_blue_truck,_with_a_red_air_balloon_in_the_sky/run@20231007-015709/ckpts/last.ckpt

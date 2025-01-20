@@ -1,3 +1,0 @@
- [('a small potted plant', [0, 0, 0, 170, 170, 170]),
- ('a medium potted plant', [170, 0, 0, 170, 170, 340]),
- ('a tall potted plant', [340, 0, 0, 170, 170, 512])]

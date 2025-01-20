@@ -1,2 +1,0 @@
- [('a tall vase', [156, 206, 0, 100, 100, 400]),
- ('a short bowl with three apples', [256, 206, 0, 150, 150, 100])]

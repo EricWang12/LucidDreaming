@@ -1,3 +1,0 @@
- [('a large white teddy bear', [106, 0, 0, 300, 156, 512]),
- ('a small brown teddy bear', [106, 356, 0, 150, 156, 256]),
- ('a medium-sized grey teddy bear', [106, 156, 0, 200, 200, 356])]

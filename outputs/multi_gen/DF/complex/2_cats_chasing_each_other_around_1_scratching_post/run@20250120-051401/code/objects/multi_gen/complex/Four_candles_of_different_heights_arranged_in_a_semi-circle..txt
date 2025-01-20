@@ -1,4 +1,0 @@
- [('a tall candle', [0, 206, 0, 120, 120, 512]),
- ('a medium-tall candle', [100, 0, 0, 120, 120, 400]),
- ('a medium-short candle', [260, 0, 0, 120, 120, 300]),
- ('a short candle', [360, 206, 0, 120, 120, 200])]

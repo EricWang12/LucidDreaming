@@ -1,5 +1,0 @@
- [(load/images/cactus_rgba.png, [50, 50, 0, 150, 150, 200]),
- (load/images/cactus_rgba.png, [312, 50, 0, 150, 150, 200]),
- (load/images/cactus_rgba.png, [50, 312, 0, 150, 150, 200]),
- (load/images/cactus_rgba.png, [312, 312, 0, 150, 150, 200]),
- (load/images/grootplant_rgba.png, [156, 156, 0, 200, 200, 300])]

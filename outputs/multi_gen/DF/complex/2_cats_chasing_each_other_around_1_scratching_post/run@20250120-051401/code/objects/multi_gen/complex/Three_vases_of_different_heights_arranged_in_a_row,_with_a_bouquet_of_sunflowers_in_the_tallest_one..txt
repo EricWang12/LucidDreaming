@@ -1,3 +1,0 @@
- [('a tall vase with a bouquet of sunflowers', [156, 206, 0, 100, 100, 350]),
- ('a medium vase', [256, 206, 0, 100, 100, 250]),
- ('a short vase', [356, 206, 0, 100, 100, 150])]

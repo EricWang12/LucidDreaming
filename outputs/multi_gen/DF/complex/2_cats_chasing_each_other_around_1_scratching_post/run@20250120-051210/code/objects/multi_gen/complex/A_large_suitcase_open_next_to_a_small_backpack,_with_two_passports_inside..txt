@@ -1,2 +1,0 @@
-[('a large suitcase with two passports inside', [0, 0, 0, 300, 300, 300]),
- ('a small backpack', [0, 310, 0, 200, 200, 200])]

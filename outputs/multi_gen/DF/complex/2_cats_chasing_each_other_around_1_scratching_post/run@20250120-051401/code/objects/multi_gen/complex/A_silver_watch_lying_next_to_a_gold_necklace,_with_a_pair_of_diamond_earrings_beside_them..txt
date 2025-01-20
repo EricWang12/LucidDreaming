@@ -1,3 +1,0 @@
- [('a silver watch', [0, 0, 0, 170, 170, 170]),
- ('a gold necklace', [170, 0, 0, 170, 170, 170]),
- ('a pair of diamond earrings', [340, 0, 0, 170, 170, 170])]

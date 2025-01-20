@@ -1,2 +1,0 @@
- [('a teddy bear with a red bow', [0, 0, 0, 256, 256, 256]),
- ('a teddy bear with a blue bow', [ 0,256, 0, 256, 256, 256])]

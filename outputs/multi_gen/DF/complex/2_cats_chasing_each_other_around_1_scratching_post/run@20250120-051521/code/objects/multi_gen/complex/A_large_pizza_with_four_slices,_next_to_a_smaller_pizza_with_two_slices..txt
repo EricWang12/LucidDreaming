@@ -1,2 +1,0 @@
- [('a large pizza with four slices', [0, 0, 0, 350, 350, 50]),
- ('a smaller pizza with two slices', [ 0,350, 0, 162, 162, 50])]

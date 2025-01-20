@@ -1,2 +1,0 @@
-[(load/images/dog1.png, [120,100,156, 200, 200, 200]), 
-(load/images/catstatue_rgba.png, [120,275,56,200,200,400])]

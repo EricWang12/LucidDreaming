@@ -1,2 +1,0 @@
- [('a brown suitcase', [0, 0, 0, 256, 256, 256]),
- ('a green backpack with two tickes sticking out', [ 0,256, 0, 256, 256, 256])]

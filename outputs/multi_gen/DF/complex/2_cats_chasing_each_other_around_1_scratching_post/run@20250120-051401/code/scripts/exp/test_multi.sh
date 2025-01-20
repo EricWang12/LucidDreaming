@@ -1,4 +1,0 @@
-# bash scripts/multi_gen/test.sh 0 objects/og/an_apple_corner.txt DF /home/eric/workspace/3D/threestudio/outputs/multi_gen/DF/og/an_apple_corner/run@20231026-041516/ckpts/last.ckpt
-# bash scripts/multi_gen/test.sh 0 objects/og/2pandas.txt DF archive/outputs/dreamfusion-if-edit/2pandas@20230920-230559/ckpts/last.ckpt
-# bash scripts/multi_gen/test.sh 0 objects/og/2pandas.txt DF outputs/dreamfusion-if-edit/2pandas@20230927-125237/ckpts/last.ckpt
-bash scripts/multi_gen/test.sh 3 /home/eric/workspace/3D/threestudio/objects/Fig4/Four_potted_plants_arranged_in_a_square,_with_a_watering_can_in_the_center..txt DF outputs/multi_gen/magic3d/good_box/Four_flower_pots_arranged_in_a_square,_with_a_garden_gnome_in_the_center./run@20231102-132359/ckpts/last.ckpt

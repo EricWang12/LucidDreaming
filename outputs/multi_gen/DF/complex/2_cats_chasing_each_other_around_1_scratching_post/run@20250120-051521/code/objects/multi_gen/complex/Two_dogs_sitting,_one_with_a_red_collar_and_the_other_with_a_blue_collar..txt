@@ -1,2 +1,0 @@
- [('a dog with a red collar', [0, 0, 0, 256, 256, 256]),
- ('a dog with a blue collar', [ 0,256, 0, 256, 256, 256])]

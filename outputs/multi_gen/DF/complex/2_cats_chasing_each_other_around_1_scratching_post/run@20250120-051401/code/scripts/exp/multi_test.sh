@@ -1,1 +1,0 @@
-bash scripts/multi_gen/test.sh 0 DF /home/eric/workspace/3D/threestudio/objects/multi_gen/normal/a_backpack_on_the_right_of_a_bird.txt /home/eric/workspace/3D/threestudio/outputs/multi_gen/DF/normal/a_backpack_on_the_right_of_a_bird/run@20231024-142055/ckpts/last.ckpt

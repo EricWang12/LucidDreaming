@@ -1,3 +1,0 @@
- [('a playing dog with a frisbee', [0, 0, 0, 256, 256, 256]),
- ('a playing dog with a frisbee', [0, 256, 0, 256, 256, 256]),
- ('a watching dog', [256, 128, 0, 256, 256, 256])]

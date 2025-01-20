@@ -1,2 +1,0 @@
- [('a coffee mug with black coffee', [206, 0, 0, 200, 256, 256]),
- ('a coffee mug with cream', [206, 256, 0, 200, 256, 256])]

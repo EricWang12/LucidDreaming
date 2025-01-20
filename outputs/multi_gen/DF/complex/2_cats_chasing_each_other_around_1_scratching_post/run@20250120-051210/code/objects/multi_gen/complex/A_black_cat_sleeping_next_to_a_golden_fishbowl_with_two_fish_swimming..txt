@@ -1,2 +1,0 @@
- [('a sleeping black cat', [0, 0, 0, 256, 256, 256]),
- ('a golden fishbowl with two fish swimming', [ 0,256, 0, 256, 256, 256])]

@@ -1,2 +1,0 @@
- [('a large potted sunflower', [206, 106, 0, 200, 150, 300]),
- ('a small potted sunflower', [206, 256, 0, 150, 100, 200])]

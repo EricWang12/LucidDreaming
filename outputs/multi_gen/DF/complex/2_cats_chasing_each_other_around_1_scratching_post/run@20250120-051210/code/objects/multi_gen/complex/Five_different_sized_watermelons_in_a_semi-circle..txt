@@ -1,5 +1,0 @@
- [('a small watermelon', [0, 206, 206, 80, 80, 80]),
- ('a medium watermelon', [90, 0, 206, 120, 120, 120]),
- ('a large watermelon', [220, 206, 206, 160, 160, 160]),
- ('a medium watermelon', [390, 0, 206, 120, 120, 120]),
- ('a small watermelon', [432, 206, 206, 80, 80, 80])]
