@@ -1,0 +1,1 @@
+bash scripts/multi_gen/all_new.sh magic3d objects/multi_gen/408 "3 3" "run.sh" 

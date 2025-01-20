@@ -1,0 +1,4 @@
+ [('a large water bottle', [106, 106, 0, 150, 150, 300]),
+ ('a medium water bottle', [256, 106, 0, 150, 150, 250]),
+ ('a small water bottle', [106, 256, 0, 150, 150, 200]),
+ ('an extra small water bottle', [256, 256, 0, 150, 150, 150])]

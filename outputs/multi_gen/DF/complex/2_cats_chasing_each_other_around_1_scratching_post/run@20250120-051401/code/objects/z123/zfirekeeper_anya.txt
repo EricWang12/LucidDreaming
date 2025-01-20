@@ -1,0 +1,8 @@
+[(load/images/firekeeper_rgba.png, [56,20,56, 200,200,400]).
+(load/images/rgba/baby_phoenix_on_ice_rgba.png, [0,220,56, 150,150,300]),
+(load/images/cactus_rgba.png, [256, 150, 56, 100, 100, 150]),
+(load/images/cactus_rgba.png, [256, 250, 56, 100, 100, 150]),
+(load/images/cactus_rgba.png, [256, 350, 56, 100, 100, 150]),
+(load/images/cactus_rgba.png, [356, 150, 56, 100, 100, 150]),
+(load/images/cactus_rgba.png, [356, 250, 56, 100, 100, 150]),
+(load/images/cactus_rgba.png, [356, 350, 56, 100, 100, 150]),]

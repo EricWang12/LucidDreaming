@@ -1,0 +1,4 @@
+ [('a large basketball', [106, 106, 206, 150, 150, 150]),
+ ('a medium basketball', [306, 106, 206, 125, 125, 125]),
+ ('a small basketball', [106, 306, 206, 100, 100, 100]),
+ ('a very small basketball', [306, 306, 206, 75, 75, 75])]

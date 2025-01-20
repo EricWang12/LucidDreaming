@@ -1,0 +1,6 @@
+name: "control-wrapper"
+inherit_from
+system_type: "control-system"
+        density_bias: "blob_edit"
+prompt: ""
+background.lr

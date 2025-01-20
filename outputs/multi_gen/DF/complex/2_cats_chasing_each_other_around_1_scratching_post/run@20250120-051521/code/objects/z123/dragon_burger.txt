@@ -1,0 +1,2 @@
+[(load/images/dragon2_rgba.png, [100,100,156, 200,200,200]),
+(load/images/hamburger_rgba.png, [275,325,156, 150,150,150])]

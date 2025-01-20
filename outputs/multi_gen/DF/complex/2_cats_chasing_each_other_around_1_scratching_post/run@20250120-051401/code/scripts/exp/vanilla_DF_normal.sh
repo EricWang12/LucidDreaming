@@ -1,0 +1,1 @@
+bash scripts/vanilla/all_new.sh DF objects/multi_gen/408/ "3 3"

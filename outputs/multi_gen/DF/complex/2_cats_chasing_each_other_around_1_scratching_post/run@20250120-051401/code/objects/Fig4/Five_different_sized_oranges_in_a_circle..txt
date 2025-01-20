@@ -1,0 +1,5 @@
+ [('a large orange', [206, 0, 0, 200, 200, 200]),
+ ('a medium orange', [0, 206, 0, 150, 150, 150]),
+ ('a small orange', [206, 206, 0, 100, 100, 100]),
+ ('a smaller orange', [412, 206, 0, 80, 80, 80]),
+ ('the smallest orange', [206, 412, 0, 50, 50, 50])]

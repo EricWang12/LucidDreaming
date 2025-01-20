@@ -1,0 +1,1 @@
+[('a golden metal pyramid', [100, 150, 220, 75, 75, 70])]

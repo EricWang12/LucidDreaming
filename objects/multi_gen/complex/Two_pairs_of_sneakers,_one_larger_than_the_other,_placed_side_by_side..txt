@@ -1,0 +1,2 @@
+ [('a pair of larger sneakers', [0, 0, 0, 256,300,  256]),
+ ('a pair of smaller sneakers', [ 0,300, 0,  256,212, 256])]

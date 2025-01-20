@@ -1,0 +1,1 @@
+bash scripts/vanilla/all_new.sh magic3d objects/multi_gen/408/ "1 1"

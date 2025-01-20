@@ -1,0 +1,2 @@
+ [('a large potted plant', [0, 0, 0, 256, 256, 512]),
+ ('a smaller potted plant', [0, 256, 0, 256, 256, 256])]

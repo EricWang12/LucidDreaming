@@ -1,0 +1,3 @@
+ [('a small vase', [106, 206, 206, 100, 100, 150]),
+ ('a medium vase with a bouquet of roses', [206, 206, 206, 150, 100, 200]),
+ ('a large vase', [356, 206, 206, 150, 100, 250])]

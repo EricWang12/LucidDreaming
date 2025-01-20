@@ -1,0 +1,3 @@
+ [('a tall lighthouse', [106, 156, 0, 100, 100, 400]),
+ ('a small beach hut', [306, 156, 0, 150, 150, 200]),
+ ('a seagull flying above', [206, 256, 300, 100, 100, 50])]

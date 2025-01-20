@@ -1,0 +1,2 @@
+ [('a pair of brown shoes', [0, 0, 0, 256, 256, 200]),
+ ('a black briefcase with a blue tie draped over it', [256, 0, 0, 256, 256, 300])]

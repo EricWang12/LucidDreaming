@@ -1,0 +1,2 @@
+[('A cubic studio monitor speaker', [350, 340, 100, 160, 160, 320]), 
+('A cubic studio monitor speaker', [350, 40, 100, 160, 160, 320])]

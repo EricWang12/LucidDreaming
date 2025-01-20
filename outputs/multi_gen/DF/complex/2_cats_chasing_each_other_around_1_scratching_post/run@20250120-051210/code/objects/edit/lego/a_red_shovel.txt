@@ -1,0 +1,1 @@
+[('a lego bulldozer with a red shovel', [150, 120, 320, 200, 80, 80])]

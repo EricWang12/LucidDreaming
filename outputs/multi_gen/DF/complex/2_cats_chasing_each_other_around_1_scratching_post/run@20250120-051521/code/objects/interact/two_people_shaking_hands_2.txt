@@ -1,0 +1,2 @@
+[('a person shaking hands', [0,256,0, 512,512,512]),
+('a person shaking hands', [0,0,0, 512,256,512])]

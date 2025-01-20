@@ -1,0 +1,3 @@
+ [('a green umbrella', [0, 0, 0, 512, 150, 512]),
+ ('a purple backpack', [0, 150, 0, 512, 150, 512]),
+ ('a pair of yellow boots', [0, 300, 0, 512, 200, 256])]

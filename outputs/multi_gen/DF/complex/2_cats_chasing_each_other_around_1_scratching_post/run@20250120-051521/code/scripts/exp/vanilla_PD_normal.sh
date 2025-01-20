@@ -1,0 +1,1 @@
+bash scripts/vanilla/all_new.sh PD objects/multi_gen/408/ "2"

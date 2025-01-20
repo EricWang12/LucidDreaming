@@ -1,0 +1,3 @@
+ [('a small teddy bear', [106, 0, 0, 150, 100, 150]),
+ ('a medium teddy bear with a pink ribbon', [206, 106, 0, 200, 150, 200]),
+ ('a large teddy bear', [306, 256, 0, 250, 200, 250])]

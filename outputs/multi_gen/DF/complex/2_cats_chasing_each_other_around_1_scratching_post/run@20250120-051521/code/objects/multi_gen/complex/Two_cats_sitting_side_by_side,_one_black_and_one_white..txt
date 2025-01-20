@@ -1,0 +1,2 @@
+ [('a black sitting cat', [206,106,  0, 100,150,  200]),
+ ('a white sitting cat', [ 206,256, 0,  100,150, 200])]

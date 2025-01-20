@@ -1,0 +1,2 @@
+[(load/images/firekeeper_rgba.png, [56,156,0, 200,200,300]),
+(load/images/rgba/baby_phoenix_on_ice_rgba.png, [256,156,56, 200,200,200])]
