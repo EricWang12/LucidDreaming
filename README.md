@@ -3,7 +3,7 @@
 [ArXiv Link](https://arxiv.org/abs/2312.00588) | [Project Webpage](https://www.zhaoningwang.com/LucidDreaming/)
 
 ## Overview
-This repository provides scripts for generating 3D shapes and scenes with the LucidDreaming pipeline. The code is based on threestudio and the original implementation can be found [here](https://github.com/threestudio-project/threestudio).
+This repository provides scripts for generating 3D shapes and scenes with the LucidDreaming pipeline. The code is based on threestudio and the original implementation can be found [here](https://github.com/threestudio-project/threestudio). The paper is accepted by **ECCV workshop 2024**.
 
 ## Dataset
 The main dataset is separated into two subsets, complex and normal. The prompt used to generate each sample is in the filename of the text files. The location of the dataset is at:
